@@ -128,9 +128,6 @@ img {
   color: var(--second-color);
 }
 
-.main {
-  overflow: hidden;
-}
 /*______________________ reusable css classes end ______________________*/
 
 /*______________________ Header & navigation bar ______________________*/
@@ -321,7 +318,6 @@ img {
   overflow: hidden;
   width: 250px;
   height: 300px;
-  align-items: flex-end;
 
   border-radius: 125px 125px 12px 12px;
   display: inline-flex;
