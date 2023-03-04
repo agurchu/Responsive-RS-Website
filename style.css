@@ -132,3 +132,75 @@ img {
 /*______________________ reusable css classes end ______________________*/
 
 /*______________________ Header & navigation bar ______________________*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: var(--z-fixed);
+  transition: 0.4s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  transition: 0.3s;
+  width: 150px;
+}
+
+.nav__logo img {
+  transform: translateY(1rem);
+}
+
+.nav__logo:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: 90%;
+    background: var(--container-color);
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    padding: 1.3rem 3rem;
+    border-radius: 1.25rem;
+    transition: 0.4s;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: var(--text-color);
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  .nav__link i {
+    font-size: 1.25rem;
+  }
+
+  .nav__link span {
+    display: none;
+  }
+}
+
+/*______________________ Header & navigation bar ends______________________*/
