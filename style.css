@@ -83,6 +83,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   border: none;
+  height: 200vh;
 }
 
 h1,
