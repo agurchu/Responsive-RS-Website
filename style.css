@@ -100,7 +100,7 @@ img {
 
 .container {
   max-width: 1024px;
-  margin: 0 1.5rem;
+  margin: 0 auto; /*was 0 1.5rem*/
 }
 
 .grid {
@@ -108,7 +108,7 @@ img {
 }
 
 .section {
-  padding: 4.5rem 0 2rem;
+  padding: 4.5rem 1.5rem 2rem;
 }
 
 .section__title {
@@ -141,6 +141,7 @@ img {
   background: transparent;
   z-index: var(--z-fixed);
   transition: 0.4s;
+  padding: 0 1.5rem;
 }
 
 .nav {
@@ -204,3 +205,114 @@ img {
 }
 
 /*______________________ Header & navigation bar ends______________________*/
+
+/*______________________ Home section starts______________________*/
+
+.home {
+  background: linear-gradient(170deg, hsl(0, 0%, 22%) 0%, hsl(0, 0%, 6%) 30%);
+  padding-bottom: 0;
+}
+
+.home__container {
+  padding-top: 4rem;
+  row-gap: 3.5rem;
+}
+
+.home__title,
+.home__value-number {
+  color: var(--body-color);
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  line-height: 120%;
+  margin-bottom: 1.25rem;
+}
+
+.home__description {
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+}
+
+.home__search {
+  background: var(--body-color);
+  padding: 0.35rem 0.35rem 0.35rem 0.75rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: 3px solid var(--text-color-light);
+  margin-bottom: 2rem;
+}
+
+.home__search i {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.home__search-input {
+  width: 90%;
+  background: var(--body-color);
+  color: var(--text-color);
+  margin: 0 0.5rem;
+}
+
+.home__search-input::placeholder {
+  color: var(--text-color-light);
+}
+
+.home__value {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.home__value-number {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home__value-number span {
+  color: var(--second-color);
+}
+
+.home__value-description {
+  display: flex;
+  color: var(--text-color-light);
+  font-size: var(--smaller-font-size);
+}
+
+.home__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home__orbe {
+  width: 265px;
+  height: 284px;
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 16%) 93%,
+    hsl(0, 0%, 67%) 100%
+  );
+  border-radius: 135px 135px 0 0;
+}
+
+.home__img {
+  position: absolute;
+  overflow: hidden;
+  width: 250px;
+  height: 300px;
+  align-items: flex-end;
+
+  border-radius: 125px 125px 12px 12px;
+  display: inline-flex;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  bottom: -2.5rem;
+}
+
+.home__img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*______________________ Home section ends______________________*/
