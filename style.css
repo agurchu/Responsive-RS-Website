@@ -83,6 +83,7 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   border: none;
+  height: 200vh;
 }
 
 h1,
@@ -141,7 +142,7 @@ img {
   width: 100%;
   background: transparent;
   z-index: var(--z-fixed);
-  transition: 0.4s;
+  transition: 0.5s ease;
   padding: 1.5rem;
 }
 
@@ -199,6 +200,12 @@ img {
   .nav__link span {
     display: none;
   }
+}
+
+/* change background header*/
+.scroll-header {
+  background: var(--body-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*______________________ Header & navigation bar ends______________________*/
