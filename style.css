@@ -426,3 +426,31 @@ img {
 }
 
 /*______________________ popular section ends______________________*/
+
+/*______________________ swiper popular ______________________*/
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  background: var(--container-color);
+  bottom: 0;
+  width: initial;
+  height: initial;
+  border: 2px solid var(--text-color-light);
+  font-size: 1.5rem;
+  padding: 6px;
+  border-radius: 0.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 3rem);
+}
