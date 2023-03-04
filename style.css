@@ -159,10 +159,18 @@ img {
   column-gap: 0.25rem;
   transition: 0.3s;
   width: 150px;
+  position: relative;
 }
 
 .nav__logo:hover {
   filter: brightness(90%);
+}
+
+.nav__logo .logo-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -206,6 +214,13 @@ img {
 .scroll-header {
   background: var(--body-color);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+.scroll-header .nav__logo .logo-white {
+  display: none;
+}
+
+.scroll-header .nav__logo .logo-dark {
+  display: block;
 }
 
 /*______________________ Header & navigation bar ends______________________*/
