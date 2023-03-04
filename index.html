@@ -25,6 +25,7 @@
     />
 
     <!--___________________ Swiper CSS ______________________-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <!--___________________ CSS ______________________-->
   <link rel="stylesheet" href="style.css" />
@@ -166,9 +167,9 @@
           <span class="section__subtitle">Best Choices</span>
           <h2 class="section__title">Popular Residences<span>.</span></h2>
 
-          <div class="popular__container">
-            <div>
-              <article class="popular__card">
+          <div class="popular__container swiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets-img/popular1.jpg"
                   alt=""
@@ -184,7 +185,7 @@
                   </p>
                 </div>
               </article>
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets-img/popular2.jpg"
                   alt=""
@@ -200,7 +201,7 @@
                   </p>
                 </div>
               </article>
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets-img/popular3.jpg"
                   alt=""
@@ -216,7 +217,7 @@
                   </p>
                 </div>
               </article>
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets-img/popular4.jpg"
                   alt=""
@@ -232,7 +233,7 @@
                   </p>
                 </div>
               </article>
-              <article class="popular__card">
+              <article class="popular__card swiper-slide">
                 <img
                   src="assets-img/popular5.jpg"
                   alt=""
@@ -248,6 +249,12 @@
                   </p>
                 </div>
               </article>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
             </div>
           </div>
         </div>
@@ -270,7 +277,7 @@
     <script src=""></script>
 
     <!--___________________ SWIPER JS _______________-->
-    <script src=""></script>
+    <script src="javascript/swiper-bundle.min.js"></script>
 
     <!--___________________ MAIN JS _______________-->
     <script src="script.js"></script>
