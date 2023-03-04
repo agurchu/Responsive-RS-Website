@@ -1,0 +1,92 @@
+/*______________________ google fonts ______________________*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/*______________________ variables css ______________________*/
+:root {
+  --header-height: 3.5rem;
+
+  /*colors*/
+
+  --first-color: #40ceff;
+  --first-color-alt: #34a7ce;
+  --first-color-light: #75ddff;
+  --first-color-lighten: #cbf2ff;
+  --second-color: #ff4040;
+  --title-color: #00384b;
+  --text-color: #5e5e5e;
+  --text-color-light: #bebebe;
+  --border-color: #cbf2ff;
+  --body-color: #fff;
+  --container-color: #fff;
+
+  /*______________________ typography ______________________*/
+
+  /*1rem = 10px*/
+
+  --body-font: "poppins", sans-serif;
+  --biggest-font-size: 3.6rem;
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.6rem;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.3rem;
+  --smaller-font-size: 1.2rem;
+
+  /*________________font weight ______________*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*________________ z index ______________*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*______________________ responsive typography ______________________*/
+@media (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 6.4rem;
+    --h1-font-size: 3.6rem;
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.3rem;
+  }
+}
+
+/*______________________ base ______________________*/
+
+html {
+  /*1rem = 10px*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+* {
+  border: none;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  margin: 0;
+  outline: none;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
