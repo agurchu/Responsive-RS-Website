@@ -90,3 +90,45 @@ h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*______________________ reusable css classes ______________________*/
+
+.container {
+  max-width: 1024px;
+  margin: 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.section__title span {
+  color: var(--second-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+}
+
+.main {
+  overflow: hidden;
+}
+/*______________________ reusable css classes end ______________________*/
+
+/*______________________ Header & navigation bar ______________________*/
