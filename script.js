@@ -22,17 +22,17 @@ var swiperPopular = new Swiper(".popular__container", {
 });
 
 //_____________________ value accordion ___________________
-
+///The code selects all the DOM elements with the class "value__accordion-item" and stores them in the variable "accordionItems".
 const accordionItems = document.querySelectorAll(".value__accordion-item");
 
-//create a function called item for each accordionItems that creates a const varieble that will select value__accordion-header
+//The code loops through each accordion item in "accordionItems" and adds a click event listener to its header.
 accordionItems.forEach((item) => {
   const accordionHeader = item.querySelector(".value__accordion-header");
 
   //the const varieble will listen to a click
   accordionHeader.addEventListener("click", () => {
     const openItem = document.querySelector(".accordion-open");
-
+    ///When an accordion header is clicked, the code first checks if there is any other open accordion item. If so, it closes it by calling the "toggleItem" function with the open item.
     toggleItem(item);
 
     if (openItem && openItem !== item) {
@@ -43,7 +43,7 @@ accordionItems.forEach((item) => {
 
 const toggleItem = (item) => {
   const accordionContent = item.querySelector(".value__accordion-content");
-
+  /// If the item is being opened, the function sets the height of its content to its scroll height, which expands it to fit its content. If the item is being closed, the function removes the height style attribute, which collapses it.
   if (item.classList.contains("accordion-open")) {
     accordionContent.removeAttribute("style");
     item.classList.remove("accordion-open");

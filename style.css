@@ -564,4 +564,20 @@ img {
   transition: all 0.25s ease;
 }
 
+/*______________________ rotate icon and shadows______________________*/
+.accordion-open {
+  box-shadow: 0 12px 32px rgba(0, 162, 255, 0.1);
+}
+
+.accordion-open .value__accordion-icon {
+  box-shadow: 0 4px 4px rgba(0, 162, 255, 0.1);
+}
+
+.accordion-open .value__accordion-arrow {
+  box-shadow: 0 2px 4px rgba(0, 162, 255, 0.1);
+}
+
+.accordion-open .value__accordion-arrow i {
+  transform: rotate(-180deg);
+}
 /*______________________ value section ends______________________*/
