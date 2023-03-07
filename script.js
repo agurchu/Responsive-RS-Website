@@ -92,3 +92,12 @@ function scrollActive() {
 
 // Add an event listener to the window object to call the scrollActive function when the user scrolls
 window.addEventListener("scroll", scrollActive);
+
+//___________________________________________________ Show scroll Up ___________________
+
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  // when the scroll is higher than 350 viewport height, add the show-scroll class to the tag with scroll-t
+  if (this.scrollY >= 350) scrollUp.classList.add("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
