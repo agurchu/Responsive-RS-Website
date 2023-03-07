@@ -945,3 +945,28 @@ body.dark-theme .nav__logo .logo-dark {
 }
 
 /*_____________________scroll up link ends_____________________________*/
+
+@media (max-width: 350px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+
+  .home {
+    padding-bottom: 0;
+  }
+
+  .contact__card {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav__menu {
+    padding: 1.3rem 1.5rem;
+  }
+}
