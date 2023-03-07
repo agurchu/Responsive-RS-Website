@@ -207,6 +207,10 @@ the website in dark mode
   color: var(--second-color);
 }
 
+.main {
+  overflow: hidden; /*for scrollreveal animation*/
+}
+
 /*______________________ reusable css classes end ______________________*/
 
 /*______________________ Header & navigation bar ______________________*/
