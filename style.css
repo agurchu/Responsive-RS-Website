@@ -220,6 +220,18 @@ img {
   display: block;
 }
 
+/* active link*/
+
+.active-link {
+  background: linear-gradient(
+    101deg,
+    var(--first-color-alt),
+    var(--first-color-light)
+  );
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 77, 107, 0.25);
+}
+
 /*______________________ Header & navigation bar ends______________________*/
 
 /*______________________ Home section starts______________________*/
@@ -686,8 +698,8 @@ img {
   background: var(--first-color);
   padding: 3rem 2rem;
   border-radius: 1.25rem;
+
   border: 6px solid var(--first-color-light);
-  text-align: center;
 }
 
 .subscribe__title {
@@ -721,7 +733,7 @@ img {
 .footer__logo {
   width: 15rem;
   position: relative;
-
+  margin-bottom: 1.75rem;
   display: inline-flex;
 }
 
@@ -737,7 +749,7 @@ img {
 }
 
 .footer__content {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   gap: 2.5rem 4rem;
 }
 
