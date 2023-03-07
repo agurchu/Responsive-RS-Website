@@ -83,7 +83,8 @@ body {
   background: var(--body-color);
   color: var(--text-color);
   border: none;
-  height: 200vh;
+
+  transition: 0.3s; /*for dark mode animation*/
 }
 
 h1,
@@ -122,6 +123,58 @@ body.dark-theme {
   --border-color: #18191a;
   --body-color: #0f0f0f;
   --container-color: #000d0f;
+}
+
+/*
+color changes in some parts of 
+the website in dark mode
+*/
+
+.dark-theme .home__search,
+.dark-theme .swiper-button-next,
+.dark-theme .swiper-button-prev {
+  border: 3px solid var(--border-color);
+}
+
+.dark-theme .nav__menu,
+.dark-theme .home__img,
+.dark-theme .popular__card:hover,
+.dark-theme .value__img,
+.dark-theme .accordion-open,
+.dark-theme .accordion-open .value__accordion-icon,
+.dark-theme .accordion-open .value__accordion-arrow,
+.dark-theme .contact__img,
+.dark-theme .contact__card-box:hover,
+.dark-theme .scrollup {
+  box-shadow: none;
+}
+
+.dark-theme .value__orbe,
+.dark-theme .value__accordion-icon,
+.dark-theme .value__accordion-arrow,
+.dark-theme .contact__orbe,
+.dark-theme .contact__card i,
+.dark-theme .contact__card-button,
+.dark-theme .subscribe__container {
+  background: var(--container-color);
+}
+
+.dark-theme .subscribe__container {
+  border: 6px solid var(--border-color);
+}
+
+.dark-theme .subscribe__description {
+  color: var(--text-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background: #000000;
+}
+.dark-theme::-webkit-scrollbar-thumb {
+  background: #272727;
+}
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background: #424242;
 }
 
 /*______________________ reusable css classes ______________________*/
@@ -165,7 +218,7 @@ body.dark-theme {
   width: 100%;
   background: transparent;
   z-index: var(--z-fixed);
-  transition: 0.5s ease;
+  transition: 0.4s ease; /*for dark mode animation*/
   padding: 1.5rem;
 }
 
@@ -193,6 +246,10 @@ body.dark-theme {
   position: absolute;
   top: 0;
   left: 0;
+  display: none;
+}
+
+body.dark-theme .nav__logo .logo-dark {
   display: none;
 }
 
@@ -278,7 +335,7 @@ body.dark-theme {
 
 .home__title,
 .home__value-number {
-  color: var(--body-color);
+  color: #fff;
 }
 
 .home__title {
@@ -863,7 +920,7 @@ body.dark-theme {
 /*_____________________scroll up link starts_____________________________*/
 
 .scrollup {
-  background: var(--first-color-lighten);
+  background: var(--border-color);
   border-radius: 0.25rem;
   bottom: -30rem;
   box-shadow: 0 8px 12px rgba(39, 160, 190, 0.1);
