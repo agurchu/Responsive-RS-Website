@@ -1153,6 +1153,11 @@ body.dark-theme .nav__logo .logo-dark {
   .home__description,
   .home__search {
     margin-bottom: 3rem;
+    font-size: var(--normal-font-size);
+  }
+
+  .home__search input {
+    font-size: var(--normal-font-size);
   }
 
   .home__value {
@@ -1292,3 +1297,15 @@ body.dark-theme .nav__logo .logo-dark {
 }
 
 /*________________________for 2k & 4k resolutions________*/
+
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}
