@@ -946,6 +946,7 @@ body.dark-theme .nav__logo .logo-dark {
 
 /*_____________________scroll up link ends_____________________________*/
 
+/*________________________for small devices________*/
 @media (max-width: 350px) {
   .container {
     margin: 0 1rem;
@@ -968,5 +969,47 @@ body.dark-theme .nav__logo .logo-dark {
 @media (max-width: 320px) {
   .nav__menu {
     padding: 1.3rem 1.5rem;
+  }
+
+  .home__value {
+    column-gap: 1rem;
+  }
+  .home__img {
+    width: 220px;
+    height: 280px;
+  }
+
+  .home__orbe {
+    width: 240px;
+    height: 264px;
+  }
+
+  .logos__container {
+    gap: 2rem 1rem;
+  }
+
+  .popular__card {
+    width: 230px;
+    padding: 0.5rem 0.5rem 0.75rem;
+  }
+
+  .value__img,
+  .contact__img {
+    width: 220px;
+    height: 260px;
+  }
+
+  .value__orbe,
+  .contact__orbe {
+    width: 236px;
+    height: 280px;
+  }
+
+  .subscribe__container {
+    padding: 2rem 1rem;
+  }
+
+  .footer__content {
+    gap: 2.5rem;
   }
 }
