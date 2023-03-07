@@ -7,17 +7,17 @@
 
   /*colors*/
 
-  --first-color: #319ec2;
+  --first-color: #31a0c2;
   --first-color-alt: #34a7ce;
   --first-color-light: #52a8c5;
   --first-color-lighten: #daf6ff;
   --second-color: #d49c01;
   --title-color: #00384b;
-  --text-color: #5e5e5e;
+  --text-color: #595e5f;
   --text-color-light: #bebebe;
   --border-color: #eaf5f8;
-  --body-color: #fff;
-  --container-color: #fff;
+  --body-color: #f6fdfd;
+  --container-color: #e7fcff;
 
   /*______________________ typography ______________________*/
 
@@ -96,6 +96,32 @@ h3 {
 img {
   width: 100%;
   height: auto;
+}
+/*____________________________________change-theme__________________*/
+
+.change-theme {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
+
+/*_____________________________variables dark theme_______________*/
+
+body.dark-theme {
+  --first-color: #41d9ff;
+
+  --second-color: #b18200;
+  --title-color: #e1f7ff;
+  --text-color: #a4aeaf;
+
+  --border-color: #18191a;
+  --body-color: #0f0f0f;
+  --container-color: #000d0f;
 }
 
 /*______________________ reusable css classes ______________________*/
@@ -218,6 +244,10 @@ img {
 
 .scroll-header .nav__logo .logo-dark {
   display: block;
+}
+
+.scroll-header .change-theme {
+  color: var(--title-color);
 }
 
 /* active link*/
