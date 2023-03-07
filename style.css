@@ -1280,3 +1280,15 @@ body.dark-theme .nav__logo .logo-dark {
     right: 3rem;
   }
 }
+
+@media (min-width: 1040px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .home__container {
+    column-gap: 4rem;
+  }
+}
+
+/*________________________for 2k & 4k resolutions________*/
