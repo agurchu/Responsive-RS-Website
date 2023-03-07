@@ -56,26 +56,39 @@ const toggleItem = (item) => {
 
 //_____________________ scroll sections active linkS ___________________
 
+// Select all sections with an id attribute
 const sections = document.querySelectorAll("section[id]");
 
+// Function to check which section is active and add or remove the active-link class from the corresponding navigation link
 function scrollActive() {
+  // Get the current scroll position
   const scrollY = window.pageYOffset;
 
+  // Loop through each section
   sections.forEach((current) => {
+    // Get the height and top position of the current section
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 58,
       sectioId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a [href*= " + sectioId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a [href*= " + sectioId + "]")
-        .classList.remove("active-link");
+    // Select the navigation link corresponding to the current section
+    const navLink = document.querySelector(
+      ".nav__menu a[href*= " + sectioId + "]"
+    );
+
+    // Check if the selected element is not null before calling the classList property
+    if (navLink !== null) {
+      // If the current section is in view, add the active-link class to the corresponding navigation link
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        navLink.classList.add("active-link");
+      }
+      // Otherwise, remove the active-link class from the corresponding navigation link
+      else {
+        navLink.classList.remove("active-link");
+      }
     }
   });
 }
 
+// Add an event listener to the window object to call the scrollActive function when the user scrolls
 window.addEventListener("scroll", scrollActive);
