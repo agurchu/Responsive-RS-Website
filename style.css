@@ -812,3 +812,20 @@ img {
 }
 
 /*______________________ Footer section ends______________________*/
+
+/*______________________ window scroll bar______________________*/
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: rgb(189, 198, 199);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(119, 143, 146);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(101, 121, 124);
+}

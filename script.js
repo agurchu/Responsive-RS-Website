@@ -69,11 +69,11 @@ function scrollActive() {
     // Get the height and top position of the current section
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 58,
-      sectioId = current.getAttribute("id");
+      sectionId = current.getAttribute("id");
 
     // Select the navigation link corresponding to the current section
     const navLink = document.querySelector(
-      ".nav__menu a[href*= " + sectioId + "]"
+      ".nav__menu a[href*= " + sectionId + "]"
     );
 
     // Check if the selected element is not null before calling the classList property
