@@ -835,7 +835,7 @@ img {
 .scrollup {
   background: var(--first-color-lighten);
   border-radius: 0.25rem;
-  bottom: 8rem;
+  bottom: -30rem;
   box-shadow: 0 8px 12px rgba(39, 160, 190, 0.1);
   color: var(--text-color);
   display: inline-flex;
@@ -851,6 +851,10 @@ img {
   transform: translateY(-0.25rem);
   color: var(--first-color);
   background: var(--container-color);
+}
+
+.show-scroll {
+  bottom: 8rem;
 }
 
 /*_____________________scroll up link ends_____________________________*/
